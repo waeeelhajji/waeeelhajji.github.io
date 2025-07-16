@@ -7,50 +7,73 @@
 <html>
 
 <head>
-	<title>About Wael Hajji - Full-Stack Visionary</title>
+	<title>My Journey - Wael Hajji</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
 		/* Custom styles */
-		.mission-statement {
-			background-color: rgba(61, 153, 112, 0.1);
-			border-left: 4px solid #3d9970;
-			padding: 2em;
-			margin: 2em 0;
-			font-size: 1.1em;
-			line-height: 1.6;
+		.journey-timeline {
+			position: relative;
+			padding-left: 50px;
+			margin: 3em 0;
 		}
 
-		.impact-stats {
+		.timeline-marker {
+			position: absolute;
+			left: 0;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: #3d9970;
 			display: flex;
-			justify-content: space-around;
-			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-weight: bold;
+		}
+
+		.timeline-content {
+			padding: 1em 2em;
+			margin-bottom: 2em;
+			border-left: 3px solid #3d9970;
+			background-color: rgba(61, 153, 112, 0.05);
+		}
+
+		.mission-card {
+			background-color: #2a2f4a;
+			color: white;
+			padding: 2em;
+			border-radius: 8px;
 			margin: 2em 0;
 		}
 
-		.stat-box {
-			text-align: center;
-			padding: 1.5em;
-			min-width: 200px;
-			border: 1px solid #eee;
-			border-radius: 8px;
-			margin: 0.5em;
+		.quote-highlight {
+			font-size: 1.2em;
+			line-height: 1.6;
+			border-left: 4px solid #3d9970;
+			padding-left: 1em;
+			margin: 1.5em 0;
 		}
 
-		.stat-number {
-			font-size: 2.5em;
-			font-weight: bold;
-			color: #3d9970;
-			line-height: 1;
+		.impact-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 1.5em;
+			margin: 2em 0;
 		}
 
-		.connect-box {
+		.impact-item {
 			background-color: #f8f9fa;
-			padding: 2em;
+			padding: 1.5em;
 			border-radius: 8px;
 			text-align: center;
-			margin-top: 3em;
+		}
+
+		.impact-icon {
+			font-size: 2.5em;
+			color: #3d9970;
+			margin-bottom: 0.5em;
 		}
 	</style>
 </head>
@@ -67,7 +90,7 @@
 					<li>
 						<a href="#" class="icon solid fa-angle-down">Explore</a>
 						<ul>
-							<li><a href="generic.html">My Mission</a></li>
+							<li><a href="generic.html">My Journey</a></li>
 							<li><a href="elements.html">Tech Stack</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
@@ -80,8 +103,8 @@
 		<!-- Main -->
 		<section id="main" class="container">
 			<header>
-				<h2>Not Just a Developer. A Visionary.</h2>
-				<p>Changing lives through code, education, and relentless innovation</p>
+				<h2>From Nothing to Impact</h2>
+				<p>How a laptop, a dream, and relentless belief built a career transforming lives through code</p>
 			</header>
 
 			<div class="box">
@@ -89,59 +112,96 @@
 						src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
 						alt="Wael Hajji teaching code" /></span>
 
-				<div class="mission-statement">
+				<div class="mission-card">
 					<h3>My Why</h3>
-					<p>I'm Wael Hajji — not just a full-stack instructor, but someone who's always dreamed bigger. Since
-						the beginning, my goal was never just to learn how to code — it was to change lives with it.
-						That's why I teach, lead, and build: to create real impact.</p>
+					<p>I'm Wael Hajji — not just a full-stack instructor, but someone who's always dreamed bigger. My
+						goal was never just to learn how to code — it was to change lives with it. That's why I teach,
+						lead, and build: to create real impact.</p>
 
-					<p>I've mentored over 250 developers so far, and I'm just getting started. My mission? Build
-						something that lasts — my own edtech company, my own product, my own dream. I'm obsessed with
-						empowering people, especially in places where opportunity isn't always easy to find.</p>
+					<p>I've mentored over 250 developers, and I'm just getting started. My mission? Build something that
+						lasts — my own edtech company, my own product, my own dream. I'm obsessed with empowering people
+						where opportunity is scarce.</p>
 
-					<p>I don't want to follow trends — I want to create them. I believe tech should lift people up.
-						That's the future I'm building, one project, one student, one bold idea at a time. 🚀💻🔥</p>
-				</div>
-
-				<div class="impact-stats">
-					<div class="stat-box">
-						<div class="stat-number">250+</div>
-						<h4>Developers Mentored</h4>
-						<p>From complete beginners to working professionals</p>
-					</div>
-					<div class="stat-box">
-						<div class="stat-number">7+</div>
-						<h4>Years in Tech</h4>
-						<p>Hands-on experience building real solutions</p>
-					</div>
-					<div class="stat-box">
-						<div class="stat-number">∞</div>
-						<h4>Future Impact</h4>
-						<p>Because the mission never ends</p>
+					<div class="quote-highlight">
+						"I don't want to follow trends — I want to create them. I believe tech should lift people up.
+						That's the future I'm building."
 					</div>
 				</div>
 
-				<h3>My Journey</h3>
-				<p>What began as curiosity about how computers work evolved into a passion for creating opportunities
-					through technology. Along the way, I discovered that my greatest strength isn't just coding—it's
-					seeing potential in people and helping them see it in themselves.</p>
+				<h3>The Beginning</h3>
+				<p>I didn't start with much. No connections, no roadmap — just a laptop, a dream, and a deep belief that
+					I was meant to do something meaningful.</p>
 
-				<p>Now, I combine technical expertise with educational innovation to:</p>
+				<p>At first, I was just another student trying to figure it out. No one knew my name, and opportunities
+					felt a world away. But I held onto one hope: that if someone gave me a chance, I'd prove them right
+					— and never let them down.</p>
+
+				<div class="journey-timeline">
+					<div class="timeline-marker">1</div>
+					<div class="timeline-content">
+						<h4>The Turning Point</h4>
+						<p>That chance came when I joined Coding Dojo — not as a student this time, but as a Teaching
+							Assistant. An international company. A dream I used to only read about. And suddenly… I was
+							part of it.</p>
+						<p>Someone believed in me — and because I believed in myself too, I rose to meet the challenge.
+							I gave it everything: my time, my energy, my heart. I wasn't just supporting students — I
+							was building futures. And in doing so, I was building mine too.</p>
+					</div>
+
+					<div class="timeline-marker">2</div>
+					<div class="timeline-content">
+						<h4>The Acceleration</h4>
+						<p>From there, the journey accelerated. I became an Instructor, then a TA Lead, and now — an
+							Instructional Support Manager.</p>
+						<p>I've spent the last 3+ years in tech education, growing not just in title but in purpose.
+							I've taught in full-time and part-time programs, led diverse teaching teams, and mentored
+							hundreds of students in MERN, Python, and C# .NET stacks.</p>
+					</div>
+				</div>
+
+				<div class="impact-grid">
+					<div class="impact-item">
+						<div class="impact-icon">👨‍🏫</div>
+						<h4>250+ Developers</h4>
+						<p>Mentored from complete beginners to professionals</p>
+					</div>
+					<div class="impact-item">
+						<div class="impact-icon">🚀</div>
+						<h4>3+ Years</h4>
+						<p>Transforming tech education at scale</p>
+					</div>
+					<div class="impact-item">
+						<div class="impact-icon">💡</div>
+						<h4>3 Tech Stacks</h4>
+						<p>MERN, Python, and C# .NET expertise</p>
+					</div>
+				</div>
+
+				<h3>Beyond Code</h3>
+				<p>For me, this has never just been about code:</p>
 				<ul>
-					<li>Develop cutting-edge applications that solve real problems</li>
-					<li>Teach in a way that makes complex concepts accessible</li>
-					<li>Build communities where developers support each other's growth</li>
-					<li>Create pathways into tech for underrepresented groups</li>
+					<li><strong>It's about showing someone they can</strong> - Believing in people before they believe
+						in themselves</li>
+					<li><strong>Turning fear into confidence</strong> - Watching impostor syndrome transform into
+						capability</li>
+					<li><strong>Lighting sparks that become fires</strong> - Seeing students surpass their own
+						expectations</li>
 				</ul>
 
-				<div class="connect-box">
-					<h3>Ready to Create Impact Together?</h3>
-					<p>Whether you want to learn, collaborate, or just geek out about tech's potential to change lives,
-						I'd love to connect.</p>
-					<ul class="actions special">
-						<li><a href="contact.html" class="button primary">Contact Me</a></li>
-						<li><a href="elements.html" class="button">See My Tech Stack</a></li>
-					</ul>
+				<div class="quote-highlight">
+					"Because I know what it's like to start from zero — and I've made it my mission to help others rise
+					beyond that, just like I did."
+				</div>
+
+				<h3>The Future</h3>
+				<p>Every day, I show up to build something bigger than myself. I don't just teach — I transform. I don't
+					just lead — I lift.</p>
+				<p>And I'm not done yet. The journey is far from over. The next chapter is still being written — and if
+					you're reading this, maybe we'll build something amazing together.</p>
+
+				<div style="text-align: center; margin: 3em 0;">
+					<h3>Let's keep growing.<br>Let's keep building.<br>Let's keep believing. 🚀</h3>
+					<a href="contact.html" class="button primary" style="margin-top: 1em;">Join My Journey</a>
 				</div>
 			</div>
 		</section>

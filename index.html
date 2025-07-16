@@ -7,216 +7,175 @@
 <html>
 
 <head>
-	<title>My Journey - Wael Hajji</title>
+	<title>Wael Hajji | Full-Stack Developer & Tech Educator</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
-		/* Custom styles */
-		.journey-timeline {
-			position: relative;
-			padding-left: 50px;
-			margin: 3em 0;
+		/* Custom additions that maintain template style */
+		#banner {
+			background: linear-gradient(rgba(42, 47, 74, 0.8), rgba(42, 47, 74, 0.8)),
+				url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+			background-size: cover;
+			background-position: center;
 		}
 
-		.timeline-marker {
-			position: absolute;
-			left: 0;
-			width: 30px;
-			height: 30px;
-			border-radius: 50%;
-			background-color: #3d9970;
+		.profile-header {
 			display: flex;
+			flex-direction: column;
 			align-items: center;
-			justify-content: center;
-			color: white;
-			font-weight: bold;
-		}
-
-		.timeline-content {
-			padding: 1em 2em;
-			margin-bottom: 2em;
-			border-left: 3px solid #3d9970;
-			background-color: rgba(61, 153, 112, 0.05);
-		}
-
-		.mission-card {
-			background-color: #2a2f4a;
-			color: white;
-			padding: 2em;
-			border-radius: 8px;
-			margin: 2em 0;
-		}
-
-		.quote-highlight {
-			font-size: 1.2em;
-			line-height: 1.6;
-			border-left: 4px solid #3d9970;
-			padding-left: 1em;
-			margin: 1.5em 0;
-		}
-
-		.impact-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-			gap: 1.5em;
-			margin: 2em 0;
-		}
-
-		.impact-item {
-			background-color: #f8f9fa;
-			padding: 1.5em;
-			border-radius: 8px;
 			text-align: center;
+			margin-bottom: 2rem;
 		}
 
-		.impact-icon {
-			font-size: 2.5em;
-			color: #3d9970;
-			margin-bottom: 0.5em;
+		.profile-image {
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+			border: 4px solid #fff;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			margin-bottom: 1.5rem;
 		}
 	</style>
 </head>
 
-<body class="is-preload">
+<body class="landing is-preload">
 	<div id="page-wrapper">
 
 		<!-- Header -->
-		<header id="header">
+		<header id="header" class="alt">
 			<h1><a href="index.html">Wael Hajji</a></h1>
 			<nav id="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li>
-						<a href="#" class="icon solid fa-angle-down">Explore</a>
+						<a href="#" class="icon solid fa-angle-down">About</a>
 						<ul>
-							<li><a href="generic.html">My Journey</a></li>
-							<li><a href="elements.html">Tech Stack</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="generic.html">My Story</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="elements.html">Technologies</a></li>
 						</ul>
 					</li>
-					<li><a href="contact.html" class="button">Let's Build</a></li>
+					<li><a href="contact.html" class="button">Contact Me</a></li>
 				</ul>
 			</nav>
 		</header>
 
+		<!-- Banner -->
+		<section id="banner">
+			<div class="profile-header">
+				<img src="./images/ww.png" alt="Wael Hajji" class="profile-image" />
+				<h2>Wael Hajji</h2>
+				<p>Full-Stack Developer & Tech Educator</p>
+			</div>
+			<ul class="actions special">
+				<li><a href="contact.html" class="button primary">Let's Connect</a></li>
+				<li><a href="generic.html" class="button">My Journey</a></li>
+			</ul>
+		</section>
+
 		<!-- Main -->
 		<section id="main" class="container">
-			<header>
-				<h2>From Nothing to Impact</h2>
-				<p>How a laptop, a dream, and relentless belief built a career transforming lives through code</p>
-			</header>
 
-			<div class="box">
+			<section class="box special" id="about">
+				<header class="major">
+					<h2>Empowering Developers, Building Futures</h2>
+					<p>Mentoring the next generation of tech professionals through<br />
+						practical skills and growth mindset development</p>
+				</header>
 				<span class="image featured"><img
-						src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
-						alt="Wael Hajji teaching code" /></span>
+						src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+						alt="Team of developers collaborating" /></span>
+			</section>
 
-				<div class="mission-card">
-					<h3>My Why</h3>
-					<p>I'm Wael Hajji — not just a full-stack instructor, but someone who's always dreamed bigger. My
-						goal was never just to learn how to code — it was to change lives with it. That's why I teach,
-						lead, and build: to create real impact.</p>
-
-					<p>I've mentored over 250 developers, and I'm just getting started. My mission? Build something that
-						lasts — my own edtech company, my own product, my own dream. I'm obsessed with empowering people
-						where opportunity is scarce.</p>
-
-					<div class="quote-highlight">
-						"I don't want to follow trends — I want to create them. I believe tech should lift people up.
-						That's the future I'm building."
-					</div>
+			<section class="box special features" id="skills">
+				<div class="features-row">
+					<section>
+						<span class="icon solid major fa-code accent2"></span>
+						<h3>Full-Stack Development</h3>
+						<p>Expertise in JavaScript frameworks, backend systems, and cloud infrastructure. Building
+							robust, scalable applications that solve real problems.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-chalkboard-teacher accent3"></span>
+						<h3>Tech Education</h3>
+						<p>250+ developers mentored from beginner to professional level. Creating accessible learning
+							paths that combine technical skills with professional development.</p>
+					</section>
 				</div>
-
-				<h3>The Beginning</h3>
-				<p>I didn't start with much. No connections, no roadmap — just a laptop, a dream, and a deep belief that
-					I was meant to do something meaningful.</p>
-
-				<p>At first, I was just another student trying to figure it out. No one knew my name, and opportunities
-					felt a world away. But I held onto one hope: that if someone gave me a chance, I'd prove them right
-					— and never let them down.</p>
-
-				<div class="journey-timeline">
-					<div class="timeline-marker">1</div>
-					<div class="timeline-content">
-						<h4>The Turning Point</h4>
-						<p>That chance came when I joined Coding Dojo — not as a student this time, but as a Teaching
-							Assistant. An international company. A dream I used to only read about. And suddenly… I was
-							part of it.</p>
-						<p>Someone believed in me — and because I believed in myself too, I rose to meet the challenge.
-							I gave it everything: my time, my energy, my heart. I wasn't just supporting students — I
-							was building futures. And in doing so, I was building mine too.</p>
-					</div>
-
-					<div class="timeline-marker">2</div>
-					<div class="timeline-content">
-						<h4>The Acceleration</h4>
-						<p>From there, the journey accelerated. I became an Instructor, then a TA Lead, and now — an
-							Instructional Support Manager.</p>
-						<p>I've spent the last 3+ years in tech education, growing not just in title but in purpose.
-							I've taught in full-time and part-time programs, led diverse teaching teams, and mentored
-							hundreds of students in MERN, Python, and C# .NET stacks.</p>
-					</div>
+				<div class="features-row">
+					<section>
+						<span class="icon solid major fa-users accent4"></span>
+						<h3>Community Building</h3>
+						<p>Creating spaces where developers can grow, collaborate, and support each other. Passionate
+							about fostering inclusive tech communities.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-lightbulb accent5"></span>
+						<h3>Startup Mindset</h3>
+						<p>Bringing entrepreneurial thinking to every project. Focused on solving meaningful problems
+							through technology and creating impact.</p>
+					</section>
 				</div>
+			</section>
 
-				<div class="impact-grid">
-					<div class="impact-item">
-						<div class="impact-icon">👨‍🏫</div>
-						<h4>250+ Developers</h4>
-						<p>Mentored from complete beginners to professionals</p>
-					</div>
-					<div class="impact-item">
-						<div class="impact-icon">🚀</div>
-						<h4>3+ Years</h4>
-						<p>Transforming tech education at scale</p>
-					</div>
-					<div class="impact-item">
-						<div class="impact-icon">💡</div>
-						<h4>3 Tech Stacks</h4>
-						<p>MERN, Python, and C# .NET expertise</p>
-					</div>
+			<div class="row">
+				<div class="col-6 col-12-narrower">
+
+					<section class="box special">
+						<span class="image featured"><img
+								src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+								alt="Teaching developers" /></span>
+						<h3>My Teaching Philosophy</h3>
+						<p>Learning tech isn't just about syntax - it's about developing a mindset of curiosity,
+							resilience, and continuous growth. My approach combines hands-on practice with real-world
+							context.</p>
+						<ul class="actions special">
+							<li><a href="generic.html" class="button alt">Learn About My Methods</a></li>
+						</ul>
+					</section>
+
 				</div>
+				<div class="col-6 col-12-narrower">
 
-				<h3>Beyond Code</h3>
-				<p>For me, this has never just been about code:</p>
-				<ul>
-					<li><strong>It's about showing someone they can</strong> - Believing in people before they believe
-						in themselves</li>
-					<li><strong>Turning fear into confidence</strong> - Watching impostor syndrome transform into
-						capability</li>
-					<li><strong>Lighting sparks that become fires</strong> - Seeing students surpass their own
-						expectations</li>
-				</ul>
+					<section class="box special">
+						<span class="image featured"><img
+								src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+								alt="Tech projects" /></span>
+						<h3>Projects & Initiatives</h3>
+						<p>From open-source contributions to startup ventures, I'm always working on projects that push
+							boundaries and create value. Explore my current work and past achievements.</p>
+						<ul class="actions special">
+							<li><a href="elements.html" class="button alt">View My Work</a></li>
+						</ul>
+					</section>
 
-				<div class="quote-highlight">
-					"Because I know what it's like to start from zero — and I've made it my mission to help others rise
-					beyond that, just like I did."
-				</div>
-
-				<h3>The Future</h3>
-				<p>Every day, I show up to build something bigger than myself. I don't just teach — I transform. I don't
-					just lead — I lift.</p>
-				<p>And I'm not done yet. The journey is far from over. The next chapter is still being written — and if
-					you're reading this, maybe we'll build something amazing together.</p>
-
-				<div style="text-align: center; margin: 3em 0;">
-					<h3>Let's keep growing.<br>Let's keep building.<br>Let's keep believing. 🚀</h3>
-					<a href="contact.html" class="button primary" style="margin-top: 1em;">Join My Journey</a>
 				</div>
 			</div>
+
+		</section>
+
+		<!-- CTA -->
+		<section id="cta">
+
+			<h2>Ready to Start Your Tech Journey?</h2>
+			<p>Whether you're looking to learn, collaborate, or build something amazing, I'd love to hear from you.</p>
+			<ul class="actions special">
+				<li><a href="contact.html" class="button primary">Get In Touch</a></li>
+				<li><a href="generic.html" class="button">Learn More</a></li>
+			</ul>
+
 		</section>
 
 		<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
-				<li><a href="https://github.com/waelhajji" class="icon brands fa-github"><span
-							class="label">GitHub</span></a></li>
-				<li><a href="https://linkedin.com/in/wael-hajji" class="icon brands fa-linkedin"><span
-							class="label">LinkedIn</span></a></li>
-				<li><a href="https://twitter.com/waelhajji" class="icon brands fa-twitter"><span
-							class="label">Twitter</span></a></li>
-				<li><a href="mailto:waelhajji.contact@gmail.com" class="icon solid fa-envelope"><span
-							class="label">Email</span></a></li>
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				<li><a href="#" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>&copy; Wael Hajji. All rights reserved.</li>
