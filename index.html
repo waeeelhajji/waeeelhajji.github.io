@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Alpha by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -12,16 +7,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
-		/* Minimal custom additions */
-		#banner h2:after {
-			content: "🚀";
-			margin-left: 10px;
+		/* Custom banner with option 2 (workspace) */
+		#banner {
+			background: linear-gradient(rgba(42, 47, 74, 0.85), rgba(42, 47, 74, 0.85)),
+				url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+			background-size: cover;
+			background-position: center 30%;
 		}
 
-		.journey-cta {
-			border-left: 4px solid #3d9970;
-			padding-left: 15px;
-			margin: 2em 0;
+		/* Featured image using option 3 (mentorship) */
+		.featured-mentorship {
+			background: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+			background-size: cover;
+			background-position: center;
+			min-height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			text-align: center;
+			position: relative;
+		}
+
+		.featured-mentorship::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.5);
+		}
+
+		.featured-mentorship-content {
+			position: relative;
+			z-index: 1;
+			padding: 2em;
 		}
 	</style>
 </head>
@@ -49,7 +70,7 @@
 			</nav>
 		</header>
 
-		<!-- Banner with subtle connection to journey -->
+		<!-- Banner with Option 2 background -->
 		<section id="banner">
 			<h2>From Code to Community</h2>
 			<p>Full-Stack Developer • Tech Educator • Opportunity Creator</p>
@@ -59,53 +80,49 @@
 			</ul>
 		</section>
 
-		<!-- Main content (unchanged structure) -->
+		<!-- Main content -->
 		<section id="main" class="container">
 
+			<!-- Featured section with Option 3 background -->
 			<section class="box special" id="about">
-				<header class="major">
-					<h2>Building Futures Through Code</h2>
-					<p>Mentoring the next generation of developers with real-world skills<br />
-						and the mindset to create impact</p>
-				</header>
-				<span class="image featured"><img src="./images/ww.png" alt="Team of developers collaborating" /></span>
-
-				<div class="journey-cta">
-					<h3>My story isn't about perfect code—it's about people</h3>
-					<p>"I started with just a laptop and a dream. Now I help others write their own success stories."
-					</p>
-					<a href="generic.html" class="button small">Read My Journey</a>
+				<div class="featured-mentorship">
+					<div class="featured-mentorship-content">
+						<h2 style="color: white; margin-bottom: 0.5em;">Building Futures Together</h2>
+						<p style="font-size: 1.25em; max-width: 800px; margin: 0 auto;">
+							Every great developer started somewhere. My mission is to light that spark.
+						</p>
+						<a href="generic.html" class="button" style="margin-top: 1.5em;">See Our Stories</a>
+					</div>
 				</div>
 			</section>
 
-			<!-- Rest of the original index.html content remains EXACTLY THE SAME -->
-			<section class="box special features" id="skills">
+			<section class="box special features">
 				<div class="features-row">
 					<section>
-						<span class="icon solid major fa-code accent2"></span>
-						<h3>Full-Stack Development</h3>
-						<p>Expertise in JavaScript frameworks, backend systems, and cloud infrastructure. Building
-							robust, scalable applications that solve real problems.</p>
+						<span class="icon solid major fa-bolt accent2"></span>
+						<h3>Empowering Developers</h3>
+						<p>Hands-on mentorship and practical skills training to help over 250 developers build
+							confidence and
+							thrive.</p>
 					</section>
 					<section>
-						<span class="icon solid major fa-chalkboard-teacher accent3"></span>
-						<h3>Tech Education</h3>
-						<p>250+ developers mentored from beginner to professional level. Creating accessible learning
-							paths that combine technical skills with professional development.</p>
+						<span class="icon solid major fa-chart-area accent3"></span>
+						<h3>Innovative Curriculum</h3>
+						<p>Designing forward-thinking learning experiences that blend industry standards with
+							creativity.</p>
 					</section>
 				</div>
 				<div class="features-row">
 					<section>
-						<span class="icon solid major fa-users accent4"></span>
-						<h3>Community Building</h3>
-						<p>Creating spaces where developers can grow, collaborate, and support each other. Passionate
-							about fostering inclusive tech communities.</p>
+						<span class="icon solid major fa-cloud accent4"></span>
+						<h3>Community Leadership</h3>
+						<p>Fostering vibrant, collaborative tech communities where ideas and knowledge flow freely.</p>
 					</section>
 					<section>
-						<span class="icon solid major fa-lightbulb accent5"></span>
-						<h3>Startup Mindset</h3>
-						<p>Bringing entrepreneurial thinking to every project. Focused on solving meaningful problems
-							through technology and creating impact.</p>
+						<span class="icon solid major fa-lock accent5"></span>
+						<h3>Startup Mentorship</h3>
+						<p>Guiding startups and innovators to build scalable solutions and impact the tech ecosystem.
+						</p>
 					</section>
 				</div>
 			</section>
@@ -115,14 +132,13 @@
 
 					<section class="box special">
 						<span class="image featured"><img
-								src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
-								alt="Teaching developers" /></span>
-						<h3>My Teaching Philosophy</h3>
-						<p>Learning tech isn't just about syntax - it's about developing a mindset of curiosity,
-							resilience, and continuous growth. My approach combines hands-on practice with real-world
-							context.</p>
+								src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&auto=format&fit=crop&w=1471&q=80"
+								alt="Team collaborating on a tech project" /></span>
+						<h3>Collaboration & Growth</h3>
+						<p>I believe the best solutions come from teamwork, diverse perspectives, and constant learning.
+						</p>
 						<ul class="actions special">
-							<li><a href="generic.html" class="button alt">Learn About My Methods</a></li>
+							<li><a href="generic.html" class="button alt">Learn More</a></li>
 						</ul>
 					</section>
 
@@ -131,13 +147,13 @@
 
 					<section class="box special">
 						<span class="image featured"><img
-								src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
-								alt="Tech projects" /></span>
-						<h3>Projects & Initiatives</h3>
-						<p>From open-source contributions to startup ventures, I'm always working on projects that push
-							boundaries and create value. Explore my current work and past achievements.</p>
+								src="https://blog.culturewise.com/hubfs/Imported_Blog_Media/improvement.jpg"
+								alt="Coding session with mentorship" /></span>
+						<h3>Continuous Improvement</h3>
+						<p>Committed to growing myself and others through mentorship, feedback, and embracing
+							challenges.</p>
 						<ul class="actions special">
-							<li><a href="elements.html" class="button alt">View My Work</a></li>
+							<li><a href="generic.html" class="button alt">Learn More</a></li>
 						</ul>
 					</section>
 
@@ -146,23 +162,36 @@
 
 		</section>
 
-		<!-- CTA with journey connection -->
+		<!-- CTA -->
 		<section id="cta">
-			<h2>Ready to Start Your Tech Journey?</h2>
-			<p>Just like I did, you can build something meaningful. Let me help you get there.</p>
-			<ul class="actions special">
-				<li><a href="contact.html" class="button primary">Get In Touch</a></li>
-				<li><a href="generic.html" class="button">See My Path</a></li>
-			</ul>
+
+			<h2>Join the Movement. Shape Your Future.</h2>
+			<p>Subscribe to my newsletter and get exclusive insights, tips, and opportunities to grow as a developer and
+				leader.
+			</p>
+
+			<form>
+				<div class="row gtr-50 gtr-uniform">
+					<div class="col-8 col-12-mobilep">
+						<input type="email" name="email" id="email" placeholder="Your Email Address" />
+					</div>
+					<div class="col-4 col-12-mobilep">
+						<input type="submit" value="Subscribe" class="fit" />
+					</div>
+				</div>
+			</form>
+
 		</section>
 
-		<!-- Footer (unchanged) -->
+		<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
 				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 				<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-				<li><a href="#" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+				<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>&copy; Wael Hajji. All rights reserved.</li>
@@ -172,7 +201,7 @@
 
 	</div>
 
-	<!-- Scripts (unchanged) -->
+	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
