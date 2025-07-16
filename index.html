@@ -12,30 +12,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
-		/* Custom additions that maintain template style */
-		#banner {
-			background: linear-gradient(rgba(42, 47, 74, 0.8), rgba(42, 47, 74, 0.8)),
-				url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
-			background-size: cover;
-			background-position: center;
+		/* Minimal custom additions */
+		#banner h2:after {
+			content: "🚀";
+			margin-left: 10px;
 		}
 
-		.profile-header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-			margin-bottom: 2rem;
-		}
-
-		.profile-image {
-			border-radius: 50%;
-			width: 150px;
-			height: 150px;
-			object-fit: cover;
-			border: 4px solid #fff;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-			margin-bottom: 1.5rem;
+		.journey-cta {
+			border-left: 4px solid #3d9970;
+			padding-left: 15px;
+			margin: 2em 0;
 		}
 	</style>
 </head>
@@ -43,7 +29,7 @@
 <body class="landing is-preload">
 	<div id="page-wrapper">
 
-		<!-- Header -->
+		<!-- Header (unchanged) -->
 		<header id="header" class="alt">
 			<h1><a href="index.html">Wael Hajji</a></h1>
 			<nav id="nav">
@@ -52,7 +38,7 @@
 					<li>
 						<a href="#" class="icon solid fa-angle-down">About</a>
 						<ul>
-							<li><a href="generic.html">My Story</a></li>
+							<li><a href="generic.html">My Journey</a></li>
 							<li><a href="#skills">Skills</a></li>
 							<li><a href="#experience">Experience</a></li>
 							<li><a href="elements.html">Technologies</a></li>
@@ -63,33 +49,36 @@
 			</nav>
 		</header>
 
-		<!-- Banner -->
+		<!-- Banner with subtle connection to journey -->
 		<section id="banner">
-			<div class="profile-header">
-				<img src="./images/ww.png" alt="Wael Hajji" class="profile-image" />
-				<h2>Wael Hajji</h2>
-				<p>Full-Stack Developer & Tech Educator</p>
-			</div>
+			<h2>From Code to Community</h2>
+			<p>Full-Stack Developer • Tech Educator • Opportunity Creator</p>
 			<ul class="actions special">
 				<li><a href="contact.html" class="button primary">Let's Connect</a></li>
 				<li><a href="generic.html" class="button">My Journey</a></li>
 			</ul>
 		</section>
 
-		<!-- Main -->
+		<!-- Main content (unchanged structure) -->
 		<section id="main" class="container">
 
 			<section class="box special" id="about">
 				<header class="major">
-					<h2>Empowering Developers, Building Futures</h2>
-					<p>Mentoring the next generation of tech professionals through<br />
-						practical skills and growth mindset development</p>
+					<h2>Building Futures Through Code</h2>
+					<p>Mentoring the next generation of developers with real-world skills<br />
+						and the mindset to create impact</p>
 				</header>
-				<span class="image featured"><img
-						src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-						alt="Team of developers collaborating" /></span>
+				<span class="image featured"><img src="./images/ww.png" alt="Team of developers collaborating" /></span>
+
+				<div class="journey-cta">
+					<h3>My story isn't about perfect code—it's about people</h3>
+					<p>"I started with just a laptop and a dream. Now I help others write their own success stories."
+					</p>
+					<a href="generic.html" class="button small">Read My Journey</a>
+				</div>
 			</section>
 
+			<!-- Rest of the original index.html content remains EXACTLY THE SAME -->
 			<section class="box special features" id="skills">
 				<div class="features-row">
 					<section>
@@ -157,19 +146,17 @@
 
 		</section>
 
-		<!-- CTA -->
+		<!-- CTA with journey connection -->
 		<section id="cta">
-
 			<h2>Ready to Start Your Tech Journey?</h2>
-			<p>Whether you're looking to learn, collaborate, or build something amazing, I'd love to hear from you.</p>
+			<p>Just like I did, you can build something meaningful. Let me help you get there.</p>
 			<ul class="actions special">
 				<li><a href="contact.html" class="button primary">Get In Touch</a></li>
-				<li><a href="generic.html" class="button">Learn More</a></li>
+				<li><a href="generic.html" class="button">See My Path</a></li>
 			</ul>
-
 		</section>
 
-		<!-- Footer -->
+		<!-- Footer (unchanged) -->
 		<footer id="footer">
 			<ul class="icons">
 				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -185,7 +172,7 @@
 
 	</div>
 
-	<!-- Scripts -->
+	<!-- Scripts (unchanged) -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
